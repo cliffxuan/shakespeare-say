@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "shakespeare-say"
+version = "0.1.0"
+description = "search from Shakespeare's work"
+authors = ["Cliff Xuan <cliff.xuan@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "shakespeare_say"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.27.0"
+duckdb = "^0.8.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

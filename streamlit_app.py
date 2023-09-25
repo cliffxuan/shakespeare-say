@@ -24,7 +24,7 @@ def main():
         line_id, play_name, speaker, text_entry
       FROM corpus
       WHERE score IS NOT NULL
-      ORDER BY score;""",
+      ORDER BY score DESC;""",
             (search,),
         )
         st.table(result.df())
